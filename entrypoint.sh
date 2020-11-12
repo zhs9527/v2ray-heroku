@@ -12,7 +12,7 @@ rm -rf trojango.zip
 ls
 chmod +x /trojanbin/*
 
-cat > /trojanbin/server.json <<-EOF
+cat <<-EOF > /trojanbin/config.json
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
@@ -60,4 +60,4 @@ cat > /trojanbin/server.json <<-EOF
 EOF
 
 cd /trojanbin
-./trojan-go -config /trojanbin/server.json
+./trojan-go -config ./config.json
