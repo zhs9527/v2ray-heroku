@@ -7,14 +7,14 @@
        "description": "请输入最上方填写的App Name，用于生成二维码和订阅链接，如果不想生成输入no",
        "value": "no"
      },
-    "VER": {
-       "description": "默认latest安装最新版本V2Ray （输入V2Ray 版本号 进行指定版本安装。例如：3.22)",
-       "value": "latest"
-     }, 
-    "V2_Path": {
-       "description": "Path路径，默认/FreeApp",
-       "value": "/FreeApp"
-     }
+    "PassWord": {
+       "description": "请输入密码",
+       "value": "passwrod"
+     },     
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray"
+    }
   },
   "website": "https://github.com/ki8852/v2ray-heroku-undone",
   "repository": "https://github.com/ki8852/v2ray-heroku-undone",
