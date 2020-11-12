@@ -16,7 +16,7 @@ cat > /trojan-go/server.json <<-EOF
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
-    "local_port": "$(($RANDOM + 10000))",
+    "local_port": 1080,
     "remote_addr": "127.0.0.1",
     "remote_port": 80,
     "password": [
@@ -25,8 +25,6 @@ cat > /trojan-go/server.json <<-EOF
     "log_level": 1,
     "log_file": "${configTrojanGoLogFile}",
     "ssl": {
-        "verify": true,
-        "verify_hostname": true,
         "cert": "/etc/ssl/certs/cert.pem",
         "key": "/etc/ssl/private/key.pem",
         "key_password": "",
