@@ -20,10 +20,9 @@ cat > /trojan-go/server.json <<-EOF
     "remote_addr": "127.0.0.1",
     "remote_port": 80,
     "password": [
-        "$PassWord"
+        zZhs9527
     ],
     "log_level": 1,
-    "log_file": "${configTrojanGoLogFile}",
     "ssl": {
         "cert": "/etc/ssl/certs/cert.pem",
         "key": "/etc/ssl/private/key.pem",
@@ -38,7 +37,7 @@ cat > /trojan-go/server.json <<-EOF
         "plain_http_response": "",
         "curves": "",
         "dhparam": "",
-        "fingerprint": "chrome"
+        "fingerprint": "firefox"
     },
     "tcp": {
         "no_delay": true,
