@@ -20,7 +20,7 @@ cat > /trojan-go/server.json <<-EOF
     "remote_addr": "127.0.0.1",
     "remote_port": 80,
     "password": [
-        zZhs9527
+        ${PassWord}
     ],
     "log_level": 1,
     "ssl": {
@@ -60,4 +60,4 @@ cat > /trojan-go/server.json <<-EOF
 EOF
 
 cd /trojan-go
-./trojan-go -config /trojan-go/server.json
+./trojan-go/trojan-go -config /trojan-go/server.json
